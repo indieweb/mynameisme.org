@@ -1,0 +1,274 @@
+/**
+ * Common styles for Front-end
+ *
+ * @package   PT_Content_Views
+ * @author    PT Guy <palaceofthemes@gmail.com>
+ * @license   GPL-2.0+
+ * @link      http://www.contentviewspro.com/
+ * @copyright 2014 PT Guy
+ */
+
+/* Fix Bootstrap box-sizing "border-box" problem */
+.pt-cv-row *,
+.pt-cv-row *:before,
+.pt-cv-row *:after,
+.pt-cv-view *,
+.pt-cv-view *:before,
+.pt-cv-view *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+/* Common */
+.pt-cv-view {
+	position: relative;
+	/*margin-bottom: 30px;*/
+	clear:    both;
+}
+
+.pt-cv-page {
+	position: relative;
+}
+
+.pt-cv-row {
+	clear: left;
+}
+
+/* Link */
+.pt-cv-view a {
+	/*color:           #000;*/
+	text-decoration: none !important;
+}
+
+.pt-cv-view a:hover, .pt-cv-view .panel-heading:hover a {
+	/*color: #ff3c1f;*/
+}
+
+/* Read more */
+.pt-cv-readmore {
+	color:  #fff;
+	margin: 10px 0;
+}
+
+/* An Item */
+.pt-cv-content-item {
+	padding-bottom: 1.5em;
+	position:       relative;
+	overflow:       hidden;
+}
+
+/* Add default margin-bottom */
+.pt-cv-content-item > * {
+	margin-bottom: 10px;
+}
+
+/* For the output which shows only Title */
+.pt-cv-only-title {
+	padding-bottom: 0;
+}
+
+/* Title */
+.pt-cv-title {
+	margin-top: 0 !important;
+	font-size:  20px;
+}
+
+.pt-cv-title a {
+	font-weight: 600;
+}
+
+/* Thumbnail */
+.pt-cv-thumbnail {
+	height:        auto;
+	max-width:     100% !important;
+	margin-bottom: 15px !important;
+	min-width:     inherit !important;
+}
+
+.pt-cv-thumbnail.pull-left {
+	margin-right: 10px;
+}
+
+.pt-cv-thumbnail.pull-right {
+	margin-left: 10px;
+}
+
+.pt-cv-no-image {
+	min-width:  80px;
+	min-height: 80px;
+}
+
+/* Content */
+.pt-cv-content, .pt-cv-content * {
+	font-size:   14px;
+	zoom:        1;
+	line-height: 1.6em;
+}
+
+/* Meta fields */
+.pt-cv-meta-fields {
+	font-size:      13px;
+	margin-top:     0;
+	padding-bottom: 10px;
+}
+
+.pt-cv-meta-fields a {
+	color: #41b7d8;
+}
+
+/* Pagination */
+.pt-cv-view + .pagination {
+	float:  left;
+	margin: 0 auto !important;
+}
+
+.pagination > li {
+	background: none !important;
+}
+
+.pagination > li > a {
+	cursor: pointer;
+}
+
+.pt-cv-spinner {
+	display:            inline-block;
+	opacity:            0;
+	filter:             alpha(opacity=0);
+	color:              #0470ec;
+
+	margin-top:         12px;
+	margin-left:        10px;
+
+	-webkit-transition: opacity 0.25s, width 0.25s;
+	-moz-transition:    opacity 0.25s, width 0.25s;
+	-o-transition:      opacity 0.25s, width 0.25s;
+	transition:         opacity 0.25s, width 0.25s;
+}
+
+.pt-cv-spinner.active {
+	opacity: 1;
+	filter:  alpha(opacity=100);
+}
+
+.pt-cv-clear-pagination {
+	margin-bottom: 50px;
+}
+
+/* View type : Collapsible List */
+.pt-cv-collapsible .panel-heading {
+	padding: 0;
+}
+
+.pt-cv-collapsible .panel-heading a {
+	display: block;
+	padding: 10px 15px;
+}
+
+/* View type : Scrollable List */
+
+/* Caption */
+.pt-cv-view .carousel-caption {
+	text-align: left;
+	left:       0;
+	right:      15px;
+	bottom:     14px;
+}
+
+.pt-cv-view .carousel-caption * {
+	text-shadow: none;
+}
+
+/* Caption with image */
+.pt-cv-cap-w-img {
+	background:     rgba(0, 0, 0, 0.6);
+	text-shadow:    0px 1px 1px #000;
+	left:           15px !important;
+	padding-left:   10px;
+	padding-bottom: 0;
+	padding-top:    10px;
+}
+
+.pt-cv-cap-w-img * {
+	color: #fff;
+}
+
+.pt-cv-cap-w-img .pt-cv-title a {
+	color: #fff !important;
+}
+
+/* Caption without image */
+.pt-cv-cap-wo-img {
+	position: relative !important;
+}
+
+.pt-cv-cap-wo-img * {
+	color: #000;
+}
+
+.pt-cv-cap-wo-img .pt-cv-readmore {
+	color: #fff;
+}
+
+/* Control */
+.pt-cv-view .carousel-control {
+	background-image: none !important;
+	z-index:          1000;
+	height:           30px;
+	width:            40px;
+	bottom:           0;
+	top:              auto;
+}
+
+/* Indicator */
+.pt-cv-view .carousel-indicators {
+	bottom:        0;
+	margin-bottom: 4px;
+}
+
+.pt-cv-view .carousel-indicators li {
+	background: #cecece;
+	border:     1px solid #cecece;
+	margin:     0 0;
+}
+
+.pt-cv-view .carousel-indicators li.active {
+	background: #428bca;
+	border:     1px solid #428bca;
+}
+
+/* Layout */
+.pt-cv-2-col .pt-cv-title {
+	clear: none !important;
+}
+
+/* Collapsible layout */
+.pt-cv-view .collapse {
+	display:    none;
+	visibility: hidden;
+}
+
+.pt-cv-view .collapse.in {
+	display:    block;
+	visibility: visible;
+}
+
+/* @Panels-minified */
+.pt-cv-view .panel {
+	margin-bottom:      20px;
+	background-color:   #ffffff;
+	border:             1px solid transparent;
+	border-radius:      4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow:         0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.pt-cv-view .panel-default {
+	border-color: #dddddd;
+}
+
+.pt-cv-view .panel-default > .panel-heading {
+	color:            #333333;
+	background-color: #f5f5f5;
+	border-color:     #dddddd;
+}

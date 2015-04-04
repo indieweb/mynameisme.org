@@ -1,0 +1,195 @@
+/*
+Theme Name: Suburbia
+Author URI: http://www.wpshower.com
+Description: Suburbia is a clean and flexible WordPress grid-based magazine theme designed in a modern and minimalist style. This theme is also suitable for blogs and misc. projects. Suburbia supports all WordPress 3.0 features and gives you an extra flexibility in every single step you make.
+Author: WPSHOWER & MOODYGUY
+Version: 1.1
+License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
+Tags: grids, magazine, modern, stylish, minimalist
+Copyright: (c) 2010 WPSHOWER
+*/
+
+/* RESET */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;text-align:left;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+:focus {outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+
+body { background-color: #e0e0e0; font: normal 12px "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; color: #333; padding-bottom: 30px; }
+p {margin: 12px 0;}
+ol, ul {padding-left: 40px; margin: 12px 0;}
+ol {list-style: decimal;}
+ul {list-style: square;}
+
+/* CLEAR */
+
+.clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* LINKS */
+
+a { text-decoration: none; color: #835504; }
+h2 a { color: #000; }
+a.stiff { background-color: #ccffff; }
+a img { border: 0; }
+
+/* WRAPPER */
+
+#wrapper { background: #fff; width: 980px; margin: 30px auto 0; }
+
+/* HEADER */
+
+.header { height: 50px; border-bottom: 15px solid #E0E0E0; padding: 15px; position: relative; }
+.desc { width: 350px; height: 30px; border-left: 1px solid #e0e0e0; position: absolute; top: 0; right: 0; padding: 15px 20px 0; }
+.space { width: 155px; height: 35px; border-right: 1px solid #e0e0e0; position: absolute; top: 0; left: 0; padding: 15px 20px 0; }
+.space p {margin: 0;}
+.header .dem-home { margin: 0 0 0 1px; }
+.header img { margin: 0 0 0 205px; }
+
+/* FOOTER */
+
+.footer { display: block; height: 60px; border-top: 30px solid #E0E0E0; margin-top: -1px; padding: 10px 20px 0 20px; font-size: 10px; position: relative; }
+p.about { position: absolute; top: 10px; right: 20px; }
+input { width: 97px; margin: 0 auto 10px auto; padding: 10px; border: 1px solid #E0E0E0; }
+
+/* HOMEPAGE LOGO TRICK */
+
+.dem-home { margin: 0 0 0 1px; width: 155px; height: 155px;}
+.logo-space { height: 55px; }
+
+/* ARTICLE */
+
+.post { border-right: 1px solid #e0e0e0; float: left; display: block; position: relative; }
+.two h2, #single h2 { font: normal 17px/25px Georgia, "Times New Roman", Times, serif; color: #000;}
+.post h4, .post h5, .post h6 { color: #000; border-top: 5px solid #e0e0e0; margin: 20px 0 0; padding: 10px 0 0 0; }
+
+.two p, #single p { font: normal 14px/22px Georgia, "Times New Roman", Times, serif; }
+.post .time { background-color: #e6e6e6; text-transform: uppercase; font-size: 9px; position: absolute; bottom: 20px; right: 20px; padding: 0 5px; }
+.post .time a { color: #835504; }
+
+/* ARTICLE ONE */
+
+.one { width: 155px; height: 460px; overflow: hidden; padding: 20px; border-top: 1px solid #e0e0e0;}
+.one h2 { font: normal 15px/23px Georgia, "Times New Roman", Times, serif; color: #000;}
+.one p { font: normal 13px/21px Georgia, "Times New Roman", Times, serif; }
+.one img { width: 155px; }
+.post { word-wrap: break-word; }
+
+/* invisible article one */
+.invisible { width: 0px; margin-left: 195px; height: 460px; border-top:
+    none; visibility: hidden;}
+
+/* ARTICLE TWO */
+
+.two { width: 351px; height: 461px; padding: 20px;}
+.two img { width: 350px; }
+
+/* ARTICLE SINGLE */
+
+#single { width: 546px; margin-right: -1px; padding: 0 20px 25px; border-right: 1px solid #e0e0e0; border-left: 1px solid #e0e0e0; float: left;}
+#single h1 { font: normal 22px/30px Georgia, "Times New Roman", Times, serif; color: #000; padding: 10px 0 0 0; border-top: 5px solid #e0e0e0; margin: 20px 0 0; }
+#single h2 { font: normal 19px/27px Georgia, "Times New Roman", Times, serif; color: #000; padding: 5px 20px; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; }
+#single h3 { font: bold 13px/21px "Helvetica Neue",Helvetica,Verdana,"Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif; color: #000; border-top: 5px solid #e0e0e0; margin-top: 20px; padding: 10px 0 0 0; }
+#single h4, #single h5, #single h6 { color: #000; border-top: 5px solid #e0e0e0; margin: 20px 0 0; padding: 10px 0 0 0; }
+#single img { max-width: 546px; }
+#single strong { font-weight: heavy; color: #000; text-shadow: 2px 2px 2px #ccffff; }
+#single blockquote { background-color: #e0e0e0; opacity: 0.8; margin: 20px; padding: 10px 15px; }
+h2 a, h3 a, h4 a, h5 a, h6 a {color: #835504;}
+
+.recent span {display: block; font-size: 10px;}
+.recent li {margin-bottom: 12px;}
+
+.err404 {font-size: 30px; margin: 0;}
+
+/* ARTICLE ASIDE */
+
+.aside { width: 155px; height: 1440px; overflow: hidden; float: left; border-right:1px solid #E0E0E0; padding: 20px;}
+.aside h3 { font: bold 13px/21px "Helvetica Neue",Helvetica,Verdana,"Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif; color: #000; border-top: 5px solid #e0e0e0; margin: 20px 0 0; padding: 10px 0 0 0; }
+.aside ul, .meta ul, .aside ol, .meta ol { margin: 20px 0; list-style: none; padding: 0;}
+
+/* ARTICLE META */
+
+.meta { width: 155px; float: left; padding: 0 20px 20px; border-bottom: 1px solid #e0e0e0;}
+.meta img.dem {position: relative; margin: -80px 0 20px; width: 155px; height: 155px;}
+.meta h3 { font: bold 13px/21px "Helvetica Neue",Helvetica,Verdana,"Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif; color: #000; border-top: 5px solid #e0e0e0; margin: 20px 0 0; padding: 10px 0 0 0; }
+
+/* ARTICLE BOTTOM */
+
+.bottom { width: 155px; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #E0E0E0; float: left; border-right:1px solid #E0E0E0; padding: 0 20px; overflow: hidden;}
+.bottom h3 { font: bold 13px/21px "Helvetica Neue",Helvetica,Verdana,"Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif; color: #000; border-top: 5px solid #e0e0e0; margin-top: 20px; padding: 10px 0 0 0; }
+.bottom ul { margin: 15px 0; padding: 0; }
+.bottom li { margin: 0; padding: 0; list-style-type: none; }
+
+#wp-calendar {width: 100%;}
+
+.navigation h3 {margin-bottom: 15px;}
+.previouspostslink {margin-right: 10px;}
+
+/* HOVER */
+
+.one:hover, .two:hover { background-color: #ccffff; }
+
+/* SEPIA */
+
+.post .sepia { margin:  0 0 20px; }
+.two .sepia { width: 350px; height: 246px; }
+.one .sepia { width: 155px; height: 109px; }
+#single .sepia { width: 546px; height: 384px; }
+
+/* WP image classes */
+
+.entry-content img { margin: 0 0 1.5em 0; }
+
+img { margin: 0; height: auto; max-width: 785px; width: auto; }
+.attachment img { max-width: 785px; }
+.alignnone, img.alignnone {display: block; clear: both; margin-bottom: 12px;}
+.alignleft, img.alignleft { margin-right: 12px; display: inline; float: left; }
+.alignright, img.alignright { margin-left: 12px; display: inline; float: right; margin-right: 12px; }
+.aligncenter, img.aligncenter { margin-right: auto; margin-left: auto; display: block; clear: both; }
+img.alignleft, img.alignright, img.aligncenter { margin-bottom: 12px; }
+.wp-caption { margin-bottom: 12px; text-align: center; padding-top: 5px }
+.wp-caption img { border: 0 none; padding: 0; margin: 0; }
+.wp-caption p.wp-caption-text { font: normal 12px/18px "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif!important; line-height: 1.5; font-size: 10px; margin: 0; font-style: italic; }
+.wp-smiley { margin: 0 !important; max-height: 1em; }
+.gallery { margin: 0 auto 18px; }
+.gallery .gallery-item { float: left; margin-top: 0; text-align: center; width: 33%; }
+.gallery .gallery-caption { color: #888; font-size: 12px; margin: 0 0 15px; }
+.gallery dl { margin: 0; }
+.gallery br+br { display: none; }
+.attachment img { /* single attachment images should be centered */ display: block; margin: 0 auto; }
+
+blockquote.left { margin-right: 20px; text-align: right; margin-left: 0; width: 33%; float: left; }
+blockquote.right { margin-left: 20px; text-align: left; margin-right: 0; width: 33%; float: right; }
+.post-edit-link { margin:20px 0 0; padding:10px 0 0; font-weight: normal;}
+
+/* Comments */
+
+#comments { width: 540px; }
+#respond h3 span {float: left;}
+
+#commentform { clear: both; }
+#commentform p {margin: 0;}
+#comment { width: 350px; clear: both; }
+.login {float: right; font-weight: normal; font-style: normal;}
+.comment-meta {float: left; width: 125px;}
+.comment-date {font-size: 10px; color: #aaaab4; margin-bottom: 15px;}
+.comment { margin-top:35px; border-top: 1px solid #e0e0e0; list-style: none; zoom: 1;}
+.comment p, .comment ul, .comment ol {margin-left: 125px;}
+.comment ul.children {margin-left: 55px;}
+#cancel-comment-reply { padding:5px 0; }
+.commentlist, .commentlist ul { padding-left: 0;}
+
+.reply { margin-left: 125px;}
+.reply a {color:#835504;}
+textarea#comment { width: 518px; border: 1px solid #E0E0E0; padding: 10px; margin-bottom: 10px; overflow: auto; font: normal 12px "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;}
+#author, #email, #url {width: 518px; font: normal 12px "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;}
+.avatar { float:left; height:55px; padding-right:10px; width:55px; }
+.submit { margin-top: 10px; }
+#submit {border: none; background: #835504; color: #fff; cursor: pointer;}
+.comment-reply-link { color: black; }
+
